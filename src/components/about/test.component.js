@@ -1,5 +1,5 @@
 // component
-angular.module("testController").component("testController", {
+angular.module("testModule", []).component("testComponent", {
   template: "<ul>" + "<li>" + "<span>{{page.name}}</span>" + "</li>" + "</ul>",
   controller: function ($scope) {
     $scope.page = {

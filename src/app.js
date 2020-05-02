@@ -10,7 +10,7 @@ const app = angular.module("app", [
   "contactPageDirective",
   "pageTitleDirective",
   "pageDescriptionDirective",
-  "testController",
+  "testModule",
 ]);
 
 app.controller("here", [

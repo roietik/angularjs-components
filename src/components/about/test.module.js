@@ -1,1 +1,1 @@
-angular.module("testController", []);
+angular.module("testModule", []);
