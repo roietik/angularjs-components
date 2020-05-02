@@ -1,0 +1,35 @@
+{
+  "name": "angular_js_1_7_9_boilerplate",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.19.0",
+    "npm": "6.13.4"
+  },
+  "configs": {
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "homepage": "https://roietik.github.io/angular_js_1_7_9_boilerplate",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.7.9",
+    "angular-route": "1.7.9",
+    "angularjs-bootstrap": "1.1.5",
+    "bootstrap": "4.4.1",
+    "gulp-express": "0.1.4",
+    "jquery": "3.5.0",
+    "npm": "6.14.4",
+    "uninstall": "0.0.0"
+  },
+  "devDependencies": {
+    "gulp": "3.8.10"
+  }
+}

@@ -1,0 +1,13 @@
+.ng-title {
+  color: orangered;
+}
+.ng-home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.ng-home p,
+pre {
+  margin-bottom: 0;
+}

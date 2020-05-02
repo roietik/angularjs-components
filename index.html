@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/global.css">
+    <!-- <base href="/" /> -->
+
+</head>
+
+<body ng-app="app">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <h1 class="ng-title">Header</h1>
+        <div class="alert alert-secondary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+    </div>
+
+    <!-- test -->
+    <!-- <div ng-controller="here" class="container">
+        <ul ng-repeat="item in appFactory">
+            <li>{{item.name}}: {{item.salary}}</li>
+        </ul>
+    </div> -->
+    <!-- test -->
+    <test-controller>
+    </test-controller>
+    <!-- <div ng-controller="testController">
+        <p>{{page.name}}</p>
+    </div> -->
+
+    <div ng-view></div>
+
+    <div class="container-fluid">
+        <h1 class="ng-title">Footer</h1>
+        <div class="alert alert-secondary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+    </div>
+
+    <!-- bower -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="bower_components/traceur/traceur.min.js"></script>
+    <script>
+        traceur.options.experimental = true;
+        new traceur.WebPageTranscoder(document.location.href).run();
+    </script>
+
+
+    <!-- module -->
+    <script type="text/javascript" src="/src/app.js"></script>
+
+    <!-- routes -->
+    <script type="text/javascript" src="/src/scripts/routes/index.js"></script>
+
+    <!-- controllers -->
+    <script type="text/javascript" src="/src/scripts/controllers/homeController.js"></script>
+    <script type="text/javascript" src="/src/scripts/controllers/aboutController.js"></script>
+    <script type="text/javascript" src="/src/scripts/controllers/contactController.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="/src/scripts/directives/homePageDirective.js"></script>
+    <script type="text/javascript" src="/src/scripts/directives/aboutPageDirective.js"></script>
+    <script type="text/javascript" src="/src/scripts/directives/contactPageDirective.js"></script>
+    <script type="text/javascript" src="/src/scripts/directives/pageTitleDirective.js"></script>
+    <script type="text/javascript" src="/src/scripts/directives/pageDescriptionDirective.js"></script>
+    <script type="text/javascript" src="/src/scripts/directives/pageDescriptionDirective.js"></script>
+
+    <!-- components -->
+    <script type="text/javascript" src="/src/components/about/test.module.js"></script>
+    <script type="text/javascript" src="/src/components/about/test.component.js"></script>
+
+
+
+</body>
+
+</html>
